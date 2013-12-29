@@ -6,14 +6,14 @@ body {
 }
 
 #header {
-	background: rgb(38,13,68);
-	background: -moz-linear-gradient(left,  rgb(38,13,68) 0%, rgb(122,24,122) 61%, rgb(209,112,149) 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(38,13,68)), color-stop(61%,rgb(122,24,122)), color-stop(100%,rgb(209,112,149)));
-	background: -webkit-linear-gradient(left,  rgb(38,13,68) 0%,rgb(122,24,122) 61%,rgb(209,112,149) 100%);
-	background: -o-linear-gradient(left,  rgb(38,13,68) 0%,rgb(122,24,122) 61%,rgb(209,112,149) 100%);
-	background: -ms-linear-gradient(left,  rgb(38,13,68) 0%,rgb(122,24,122) 61%,rgb(209,112,149) 100%);
-	background: linear-gradient(to right,  rgb(38,13,68) 0%,rgb(122,24,122) 61%,rgb(209,112,149) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#260d44', endColorstr='#d17095',GradientType=1 );
+	background: rgb(10,33,53);
+	background: -moz-linear-gradient(left,  rgb(10,33,53) 0%, rgb(52,86,96) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(10,33,53)), color-stop(100%,rgb(52,86,96)));
+	background: -webkit-linear-gradient(left,  rgb(10,33,53) 0%,rgb(52,86,96) 100%);
+	background: -o-linear-gradient(left,  rgb(10,33,53) 0%,rgb(52,86,96) 100%);
+	background: -ms-linear-gradient(left,  rgb(10,33,53) 0%,rgb(52,86,96) 100%);
+	background: linear-gradient(to right,  rgb(10,33,53) 0%,rgb(52,86,96) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2135', endColorstr='#345660',GradientType=1 );
 	position: relative;
 }
 
@@ -32,7 +32,8 @@ body {
 	z-index: 2;
 	position: relative;	
 	padding: 50px 0 50px;
-	width: 1024px;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 
@@ -42,7 +43,7 @@ body {
 	line-height: 1.2;
 	letter-spacing: 1px;
 	text-align: center;
-	text-shadow: 0px 2px 2px rgba(122,24,122, 0.15), 0 0 0.15em #261044;
+	text-shadow: 0px 2px 2px rgba(10,33,53, 0.15), 0 0 0.15em #0a2135;
 }
 
 .opening h1, p {
@@ -50,10 +51,11 @@ body {
 }
 
 .opening p {
-	font-size: 20px;
+	font-size: 28px;
 	font-weight: 100;
 	line-height: 1.4;
 	letter-spacing: 1px;
+	text-align: center;
 }
 
 .menu {
@@ -64,9 +66,10 @@ body {
 .menu li {
 	display: inline;
 	transition: color 0.4s ease;
-	color: #9b729b;
-	font-size: 16px;
+	color: #5a90a0;
+	font-size: 14px;
 	font-weight: 400;
+	padding: 0 10px;
 }
 
 .menu li:hover {
@@ -76,4 +79,14 @@ body {
 
 #container {
 
+}
+
+#footer {
+	display: block;
+	list-style-type: none;
+	background: #f4f4f4;
+}
+
+#footer li {
+	display: inline;
 }
