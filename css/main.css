@@ -1,0 +1,19 @@
+body {
+	background: none repeat scroll;
+	color: #333333;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1.5em;
+}
+
+.double {
+	font-size: 2rem;
+}
+
+#header {
+	background-image: url("../img/bg-pattern.png");
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+}

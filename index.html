@@ -7,16 +7,22 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div id="header">
-		<h1>The Beginner's Cheatsheet</h1>
-		<p>Starting with web development it means that you probably suck at everything, just like I do. So, other than learn what makes web development possible–HTML & CSS basically–you also have to be proficient using a text editor, a version control system and the shell commands. And if you suck at all these things like I do (damn, why didn't I learn this in school?) you need to start from the very beginning, and you need to keep a file next to you until everything you do on an editor or on the terminal becomes so familiar you just do it automatically. I work with TextMate on MacOSX–the key bindings are the same, which makes it easier for me–and GIT.</p>
-	</div>
-	<div class="main content">
+<div id="header">	
+<div class="opening">	<h1>The Beginner's Cheatsheet</h1>
+	<p>Starting with web development it means that you probably suck at everything, just like I do. So, other than learn what makes web development possible–HTML &amp; CSS basically–you also have to be proficient using a text editor, a version control system and the shell commands. And if you suck at all these things like I do (damn, why didn't I learn this in school?) you need to start from the very beginning, and you need to keep a file next to you until everything you do on an editor or on the terminal becomes so familiar you just do it automatically. I work with TextMate on MacOSX–the key bindings are the same, which makes it easier for me–and GIT.</p>		
+	<ul>
+			<li>Key Bindings</li>
+			<li>TextMate Shortcuts</li>
+			<li>Emmet Essentials</li>
+			<li>GIT Essentials</li>
+		</ul></div>
+</div>
+<div id="container">
 		<h2>Key Bindings</h2>
 		<h3>Selecting</h3>
 		<table>
 			<tr>
-				<td><span class="control">ctrl</span>+<span class="character">w</span></td>
+				<td><span class="control">ctrl</span>+<span class="string">w</span></td>
 				<td>select a word</td>
 			</tr>
 			<tr>
@@ -40,32 +46,48 @@
 		<p><table>
 			<tr>
 				<td><span class="command">⌘</span><span class="arrow">↑</span><span class="command">⌘</span><span class="arrow">↓</span></td>
-				<td>Go to the beginning/end of the document</td>
+				<td>go to the beginning/end of the document</td>
 			</tr>
 			<tr>				
 				<td><span class="command">⌘</span><span class="arrow">←</span>and<span class="command">⌘</span><span class="arrow">→</span></td>
-				<td>Go to the beginning/end of the line</td>
+				<td>go to the beginning/end of the line</td>
+			</tr>
+			<tr>				
+				<td><span class="control">ctrl</span>+<span class="string">p</span>and<span class="control">ctrl</span>+<span class="string">n</span></td>
+				<td>go to previous/next line</td>
 			</tr>
 			<tr>
 				<td><span class="alt">alt</span><span class="arrow">←</span>and<span class="alt">alt</span><span class="arrow">→</span></td>
-				<td>One word left/right</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
+				<td>one word left/right</td>
 			</tr>
 		</table></p>
-		<h3>Copying/Deleting</h3>
-		<p></p>
-		<h3>TextMate Essentials</h3>
+		<h3>Deleting</h3>
+		<p><table>
+			<tr>
+				<td><span class="alt">alt</span><span class="canc-b">⌫</span></td>
+				<td>delete one word backward</td>
+			</tr>
+			<tr>
+				<td><span class="control">ctrl</span>+<span class="shift">⇧</span><span class="string">j</span></td>
+				<td>delete current line</td>
+			</tr>
+		</table></p>
+		<h3>TextMate Useful Shortcuts</h3>
 		<p></p>
 		<h3>Emmet Essentials</h3>
 		<p></p>
 		<h3>Git Basics</h3>
 		<p></p>
 	</div>
-	<div>
+	<div id="links">
 		<h2>Resources</h2>
+	</div>
+	<div id="footer">
+		<ul>
+			<li>Twitter</li>
+			<li>Fork this</li>
+			<li>My work</li>
+		</ul>
 	</div>
 </body>
 </html>
