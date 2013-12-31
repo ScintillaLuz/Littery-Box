@@ -12,78 +12,129 @@
 			<h1>The Beginner's Cheatsheet</h1>
 			<p>If you're starting with web development–and you totally suck using a text editor and using shell commands just like a do–just sit down, breathe, and keep this cheatsheet open next to your editor.</p>		
 			<ul class="menu">
-				<li>Key Bindings</li>
-				<li>TextMate Shortcuts</li>
-				<li>Emmet Essentials</li>
-				<li>GIT Basics</li>
-				<li>Resources</li>
+				<li><a href="#Key_Bindings">Key Bindings</a></li>
+				<li><a href="#Textmate_shortcuts">TextMate Shortcuts</a></li>
+				<li><a href="#Emmet_essentials">Emmet Essentials</a></li>
+				<li><a href="#Git_basics">Git Basics</a></li>
+				<li><a href="#Resources">Resources</a></li>
 			</ul>
 		</div>
 	</div>
 	<div id="container">
-		<h2>Key Bindings</h2>
+		<h2 id="Key_bindings">Key Bindings</h2>
 		<h3>Selecting</h3>
 		<table>
 			<tr>
-				<td><span class="control">ctrl</span>+<span class="string">w</span></td>
+				<td><span class="control">ctrl</span> <span class="character">W</span></td>
 				<td>select a word</td>
 			</tr>
 			<tr>
-				<td><span class="shift">⇧</span><span class="alt">alt</span><span class="arrow">←</span>and<span class="shift">⇧</span><span class="alt">alt</span><span class="arrow">→</span></td>
+				<td><span class="shift">⇧</span> <span class="alt">alt</span> <span class="arrow">←</span> and <span class="shift">⇧</span> <span class="alt">alt</span> <span class="arrow">→</span></td>
 				<td>select word left/right</td>
 			</tr>
 			<tr>
-				<td><span class="shift">⇧</span><span class="arrow">←</span>and<span class="shift">⇧</span><span class="arrow">→</span></td>
+				<td><span class="shift">⇧</span> <span class="arrow">←</span> and <span class="shift">⇧</span> <span class="arrow">→</span></td>
 				<td>select text backward/forward</td>
 			</tr>
 			<tr>
-				<td><span class="shift">⇧</span><span class="arrow">↑</span>and<span class="shift">⇧</span><span class="arrow">↓</span></td>
+				<td><span class="shift">⇧</span> <span class="arrow">↑</span> and <span class="shift">⇧</span> <span class="arrow">↓</span></td>
 				<td>select text upward/downward</td>
 			</tr>
 			<tr>
-				<td><span class="shift">⇧</span><span class="command">⌘</span><span class="arrow">←</span>and<span class="shift">⇧</span><span class="command">⌘</span><span class="arrow">→</span></td>
+				<td><span class="shift">⇧</span> <span class="command">⌘</span> <span class="arrow">←</span> and <span class="shift">⇧</span><span class="command">⌘</span> <span class="arrow">→</span></td>
 				<td>select to the beginning of the line/to the end of the line</td>
 			</tr>
 		</table>
 		<h3>Moving Caret</h3>
 		<p><table>
 			<tr>
-				<td><span class="command">⌘</span><span class="arrow">↑</span><span class="command">⌘</span><span class="arrow">↓</span></td>
+				<td><span class="command">⌘</span> <span class="arrow">↑</span> and <span class="command">⌘</span> <span class="arrow">↓</span></td>
 				<td>go to the beginning/end of the document</td>
 			</tr>
 			<tr>				
-				<td><span class="command">⌘</span><span class="arrow">←</span>and<span class="command">⌘</span><span class="arrow">→</span></td>
+				<td><span class="command">⌘</span> <span class="arrow">←</span> and <span class="command">⌘</span> <span class="arrow">→</span></td>
 				<td>go to the beginning/end of the line</td>
 			</tr>
 			<tr>				
-				<td><span class="control">ctrl</span>+<span class="string">p</span>and<span class="control">ctrl</span>+<span class="string">n</span></td>
+				<td><span class="control">ctrl</span> <span class="character">p</span> and <span class="control">ctrl</span> <span class="character">N</span></td>
 				<td>go to previous/next line</td>
 			</tr>
 			<tr>
-				<td><span class="alt">alt</span><span class="arrow">←</span>and<span class="alt">alt</span><span class="arrow">→</span></td>
+				<td><span class="alt">alt</span> <span class="arrow">←</span> and <span class="alt">alt</span> <span class="arrow">→</span></td>
 				<td>one word left/right</td>
 			</tr>
 		</table></p>
 		<h3>Deleting</h3>
 		<p><table>
 			<tr>
-				<td><span class="alt">alt</span><span class="canc-b">⌫</span></td>
+				<td><span class="alt">alt</span> <span class="canc-b">⌫</span></td>
 				<td>delete one word backward</td>
 			</tr>
 			<tr>
-				<td><span class="control">ctrl</span>+<span class="shift">⇧</span><span class="string">j</span></td>
+				<td><span class="control">ctrl</span> + <span class="shift">⇧</span> <span class="character">J</span></td>
 				<td>delete current line</td>
 			</tr>
 		</table></p>
-		<h3>TextMate Useful Shortcuts</h3>
-		<p></p>
+		<h3 id="Textmate_shortcuts">TextMate Useful Shortcuts</h3>
+		<p>
+			<table>
+				<tr>
+					<td><span class="control">ctrl</span> <span class="shift">⇧</span> <span class="character">W</span></td>
+					<td>wraps up the selection in a HMTL tag, by default a <span class="code">&lt;p&gt;</span>. The opening tag is selected so you can simply change the tag and TextMate will automatically match the closing tag. Awesome.</td>
+				</tr>
+				<tr>
+					<td><span class="control">ctrl</span> <span class="shift">⇧</span> <span class="character">L</span></td>
+					<td>wraps up the selection as link, using the last link you have in the clipboard for the <span class="code">href</span> attribute or a simple example.com link</td>
+				</tr>
+				<tr>
+					<td><span class="control">ctrl</span> <span class="character">B</span></td>
+					<td>wraps up the selection in <span class="code">&lt;strong&gt;</span>tag</td>
+				</tr>
+				<tr>
+					<td><span class="command">⌘</span> <span class="character">/</span></td>
+					<td>wraps up the current line–no matter where you are with the caret–as a comment; smart enough to match the language!</td>
+				</tr>
+				<tr>
+					<td><span class="control">ctrl</span> <span class="character">S</span></td>
+					<td>prompt the incremental search, which is *absolutely* essential to jump from one point to another without losing focus</td>
+				</tr>
+				<tr>
+					<td><span class="control">ctrl</span> <span class="character">H</span></td>
+					<td>prompts the contextual help with the W3C definitions of the property you're near with the caret</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</p>
 		<h3>Emmet Essentials</h3>
 		<p></p>
-		<h3>Git Basics</h3>
+		<h3 id="Git_basics">Git Basics</h3>
 		<p></p>
 	</div>
 	<div id="links">
-		<h2>Resources</h2>
+		<h2 id="Resources">Resources</h2>
+		<ul>
+			<li><a href="https://github.com/emmetio/Emmet.tmplugin">Emmet plugin for Textmate</a></li>
+			<li><a href="http://docs.emmet.io/" title="Emmet Documentation">Documentation for Emmet</a><p>Quite extensive and potentially you can do pretty nasty stuff using just a combination of these shortcuts; but as experienced developers would tell you, productivity tools should be picked up carefully by beginners. I like Emmet because it has a very logical structure that makes you think throughly about the structure of elements you're about to build. The key is taking advantage of task automation but not overdoing it.</p></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 	</div>
 	<div id="footer">
 		<ul>

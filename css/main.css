@@ -65,16 +65,19 @@ body {
 
 .menu li {
 	display: inline;
-	transition: color 0.4s ease;
-	color: #5a90a0;
 	font-size: 14px;
 	font-weight: 400;
 	padding: 0 10px;
 }
 
-.menu li:hover {
+.menu li a {
+	color: #5a90a0;
+	transition: color 0.4s ease;
+	text-decoration: none;
+}
+
+.menu li a:hover {
 	color: #fff;
-	text-decoration: underline;
 }
 
 #container {
